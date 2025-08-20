@@ -1,0 +1,38 @@
+.button{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    transition: 0.3;
+    padding:10px 10px
+}
+.button:hover{
+    background-color: brown;
+}
+
+.box{
+    background-color: darkcyan;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    color: white;
+}
+.image{
+    height: 40px;
+    width:40px;
+    display: inline-block;
+}
+#box1{
+    background-color: burlywood;
+}
+#box2{
+    background-color: darkgray;
+}
+#box3{
+    background-color: aquamarine;
+}
+#box4{
+    background-color:cornflowerblue;
+}
+#nav{
+    height: 50px;
+
+}
