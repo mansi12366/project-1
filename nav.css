@@ -1,0 +1,21 @@
+.nav{
+    background-color: chocolate;
+    height:80px;
+    text-align:left;
+
+  
+
+}
+#abc{
+    padding-left: 250px;
+    text-align: center;
+    font-weight: 700;
+    font-size: larger;
+    
+}
+#spam{
+    padding-left: 100px;
+    border: 2px;
+    border-color:black;
+}
+
