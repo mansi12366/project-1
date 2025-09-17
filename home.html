@@ -4,8 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .flex-container{
+            width: 700px;
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: purple;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap:10px;
+            background-color: chocolate;
+            padding: 10px;
+        }
+        .grid-container>div{
+            background-color: bisque;
+            color: black;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+      .flex-container> div{
+        background-color: aquamarine;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      } 
+      table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input {
+      padding: 8px;
+      font-size: 14px;
+      flex: 1;
+    }
+
+    .search-box button {
+      padding: 8px 12px;
+      background: #007bff;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background: #0056b3;
+    }
+ 
+
+
+    </style>
 </head>
 <body>
-    <p> welcome to our home page</p>
+    <h1>flex box</h1>
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+</div>
+<div class="grid-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    
+</div>
+<table>
+    <tr>
+      <td>Search</td>
+      <td>
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <button>
+            <i class="fa fa-search"></i> <!-- search icon -->
+          </button>
+        </div>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>

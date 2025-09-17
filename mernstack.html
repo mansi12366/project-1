@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="web.css"/>
 	<title>table</title>
 	<style>
 		input[type="text"]{
@@ -13,10 +14,54 @@
 		}
 		spam{
 			display: inline-block;
+			transition: 0.3s ease;
+		}
+		.image:hover{
+			 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transform: scale(1.05);
 		}
 		div{
 			display: inline-block;
+			transition: 0.3s ease;
 		}
+		.images:hover{
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transform: scale(1.05);
+		}
+		table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input {
+      padding: 8px;
+      font-size: 14px;
+      flex: 1;
+    }
+
+    .search-box button {
+      padding: 8px 12px;
+      background: black;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background:red;
+    }
+
 		
 	</style>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=favorite" />
@@ -31,11 +76,12 @@
 			<th style="padding-left: 100px;"><u>Home </u></th>
 			<th style="padding-left: 100px;"><u>Beauty</u></th>
 			<th style="padding-left: 100px;"><u>Genz</u></th>
-			<th style="padding-left: 50px;">
-				<label  for="search"> <i class="fa-solid fa-magnifying-glass"></i></label>
+			<th>
+				<div class="search-box">
 				<input type="text"  name="search" id="search" placeholder="Search for products,brands and more">
-				
-				 </th>
+				<button> <i class="fa-solid fa-magnifying-glass"></i> </button>
+				</div>
+			 </th>
 			<th style="padding-left: 40px;">Profile <i class="fa-solid fa-user"></i></th>
 			<span class="material-symbols-outlined">favorite</span>
 			<th style="padding-left: 10px;">Wishlist <i class="fa-solid fa-heart"></i></th> 
@@ -47,27 +93,27 @@
 	</div>		
 	 </header>
 	 <main>
-		<spam>
+		<spam class="image">
 			<img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8914959/2019/3/6/e0d69917-b3c2-4f7b-bc9d-b285970742f01551872509206-Libas-Women-Maroon--Gold-Toned-Printed-Kurta-with-Trousers-7-1.jpg" alt="kurti image"  height="400px" width="300px">
 			<h3>Shine with confidence</h3>
 			<h1>min 30% off</h1>
 		</spam>
-		<spam>
+		<spam class="image">
 			<img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/5567702/2018/4/28/11524898894094-Zink-London-Printed-Sheath-Dress-for-Women-8911524898894013-5.jpg" alt="top image"height="400px" width="300px">
 			<h3>Where Glam meets the wild wear</h3>
 			<h1>min 50% off</h1>
 		</spam>
-		<spam>
+		<spam class="image">
 			<img src="https://static.magicpin.com/storage/blog/images/myntra-online-shopping-for-mens_PartyWear_CheckBlazer.jpg" alt="suit image" height="400px" width="300px">
 			<h3>Work-Ready style</h3>
 			<h1>30-40 % off</h1>
 		</spam>
-		<spam>
+		<spam class="image">
 			<img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7999577/2018/12/13/ed7d8c67-78ba-4358-b151-491618dd11861544696232082-Saree-mall-Orange--Navy-Blue-Embellished-Saree-2861544696231-1.jpg" alt="saree" height="400px" width="300px">
 			<h3>Some indian vives</h3>
 			<h1>min 50% off</h1>
 		</spam>
-		<spam >
+		<spam  class="image">
 		  <img src="https://static.magicpin.com/storage/blog/images/myntra-online-shopping-for-women-casual-2.PNG" alt="shirt" height="400px" width="280px">
 		<h3>Casual with classic</h3>
 		<h1>min 40% off</h1>
